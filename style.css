@@ -252,6 +252,47 @@ a {
     z-index: 0;
 }
 
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#app img {
+    width: 100%;
+}
+
+.app-details {
+    padding: 0px 60px;
+    margin: auto;
+}
+
+.app-details h1 {
+    text-align: left;
+}
+
+.app-details p {
+    font-size: 20px;
+}
+
+.app-details button {
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border: 1px solid white;
+    padding: 15px 30px;
+    transition: 300ms;
+}
+
+.app-details button:hover {
+    color: white;
+    border: 1px solid blue;
+    background-color: blue;
+
+}
+
+
 .logos-div {
     width: 100%;
     margin: auto;
@@ -360,6 +401,19 @@ footer {
         width: 40%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #app {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .app-details {
+        margin: 50px 0px;
+    }
+
+}
+
 
 @media only screen and (max-width: 550px) {
     .card {
