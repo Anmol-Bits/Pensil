@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+
+    <style>
+        #app {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #app img {
+            width: 100%;
+        }
+
+        .app-details {
+            padding: 0px 60px;
+            margin: auto;
+        }
+
+        .app-details h1 {
+            text-align: left;
+        }
+
+        .app-details p {
+            font-size: 20px;
+        }
+
+        .app-details button {
+            cursor: pointer;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            background: white;
+            border: 1px solid white;
+            padding: 15px 30px;
+            transition: 300ms;
+        }
+
+        .app-details button:hover {
+            color: white;
+            border: 1px solid blue;
+            background-color: blue;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            #app {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .app-details {
+                margin: 50px 0px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- -------    NAVIGATION    ------- -->
+
+    <header class="header">
+        <a href="" class="logo"><img src="/images/pensil_logo.svg" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Use Case</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="/admin.html">Admin</a></li>
+        </ul>
+    </header>
+
+
+    <!-- -------    WHAT IS PENSIL    ------- -->
+
+    <div class="container">
+        <h1 class="headings" id="tag-line">One platform for all your community needs <a id="try" href="#">Try for
+                free</a></h1>
+
+            <div class="pensil-grid">
+                <div class="detail">
+                    <span class="headings">What is Pensil ?</span>
+                    <p class="about-us">It is a multi-purpose platform that is currently being used in universities,
+                        cohort-based courses, public discussion forums, etc. It provides a flexible and robust community
+                        platform where members can come together and interact with each other, participate in live
+                        discussions or take online learning courses.</p>
+                </div>
+                <div class="hero">
+                    <img src="/images/Pensil_image.png" alt="">
+                </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------    VIDEO    ------- -->
+
+    <div class="video">
+        <div class="padding-div">
+            <div class="container">
+                <h1 class="headings">Here we are</h1>
+                <div class="video-flex">
+                    <video loop muted playsinline data-wf-ignore="true">
+                        <source
+                            src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.mp4"
+                            data-wf-ignore="true">
+                        <source
+                            src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.webm"
+                            data-wf-ignore="true">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------    LIVE INTERACTION   ------- -->
+
+    <div class="black-bg">
+        <div class="padding-div">
+            <div class="container">
+                <div class="flex-column">
+                    <h1 class="headings">Seemless live Interaction</h1>
+                    <div>
+                        <img id="live-img" src="/images/live_interaction.png" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex-row">
+                            <div class="live-features">
+                                <!-- <img src="/why_pensil images/seo-image.jpg" alt=""> -->
+                                <div class="container">
+                                    <h2>Immersive Experience</h2>
+                                    <p>Conduct Live sessions or webinar, get the best audio video quality</p>
+                                </div>
+                            </div>
+
+                            <div class="live-features">
+                                <!-- <img src="/why_pensil images/game-image.jpg" alt=""> -->
+                                <div class="container">
+                                    <h2>Host Event with Live QnA</h2>
+                                    <p>Invite hosts, moderator & get the best live experience for your community</p>
+                                </div>
+                            </div>
+
+                            <div class="live-features">
+                                <!-- <img src="/why_pensil images/server-image.jpg" alt=""> -->
+                                <div class="container">
+                                    <h2>Share your live recordings</h2>
+                                    <p>Share or post recording on Youtube, Facebook, Vimeo, or any other platform</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------    WHY US ?    ------- -->
+
+    <div class="padding-div">
+        <div class="container">
+            <h1 class="headings">Why Pensil ?</h1>
+            <div class="flex-row    ">
+                <div class="card">
+                    <img src="/why_pensil images/seo-image.jpg" alt="">
+                    <div class="container">
+                        <h2>SEO content</h2>
+                        <p>Rank higher in google search result with SEO optimized content</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/why_pensil images/game-image.jpg" alt="">
+                    <div class="container">
+                        <h2>Gamification</h2>
+                        <p>Engage community with karmapoints, badges, milestore etc</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/why_pensil images/server-image.jpg" alt="">
+                    <div class="container">
+                        <h2>Dedicated Server</h2>
+                        <p>Scale as you grow with dedicated server for community of any size</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/why_pensil images/seo-image.jpg" alt="">
+                    <div class="container">
+                        <h2>SEO content</h2>
+                        <p>Rank higher in google search result with SEO optimized content</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/why_pensil images/game-image.jpg" alt="">
+                    <div class="container">
+                        <h2>Gamification</h2>
+                        <p>Engage community with karmapoints, badges, milestore etc</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/why_pensil images/server-image.jpg" alt="">
+                    <div class="container">
+                        <h2>Dedicated Server</h2>
+                        <p>Scale as you grow with dedicated server for community of any size</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------    MOBILE APP    ------- -->
+
+    <div class="padding-div">
+        <div class="black-bg">
+            <div id="app">
+                <div class="app-details">
+                    <h1>Mobile App for your community</h1>
+                    <p>Get complete custom branded app for you community & give your community the experince they
+                        deserve.
+                    </p>
+                    <button>Get Mobile App</button>
+                </div>
+                <img src="/images/app-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------    PARTNERS    ------- -->
+
+    <div class="white-bg">
+        <div class="container">
+            <h1 class="headings">Trusted Partners</h1>
+
+            <div class="logos-div">
+                <div class="logo-container"><img src="/Sponsors/1.png" alt="Ultimate Gurus" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/2.png" alt="Unschool" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/3.png" alt="Somiya Vidyavihar" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/4.png" alt="Tyke" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/5.png" alt="Catalyst Muscat" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/6.png" alt="PedalStart" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/7.png" alt="The Heartway" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/8.png" alt="PlanetSpark" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/9.png" alt="Recruiting Monk" class="partner-logo"></div>
+                <div class="logo-container"><img src="/Sponsors/10.png" alt="Kinship" class="partner-logo"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------    FOOTER    ------- -->
+
+    <footer>
+        <div class="container">
+            <div class="foot-flex-row">
+                <div class="foot-flex-column">
+                    <h2>Get Updates</h2>
+                    <input id="foot-inp" type="text" placeholder="Email">
+                    <button id="foot-button">Submit</button>
+                </div>
+
+                <div class="foot-flex-column">
+                    <h3>Pensil</h3>
+                    <a href="">Try for free</a>
+                    <a href="">Mobile App</a>
+                    <a href="">Product Overview</a>
+                    <a href="">Pricing</a>
+                    <a href="">Watch Demo</a>
+                    <a href="">Email us</a>
+                </div>
+
+                <div class="foot-flex-column">
+                    <h3>Resource</h3>
+                    <a href="">Updates</a>
+                    <a href="">Blog</a>
+                    <a href="">Integration</a>
+                    <a href="">Roadmap</a>
+                    <a href="">Community</a>
+                </div>
+
+                <div class="foot-flex-column">
+                    <h3>Compare</h3>
+                    <a href="">Discourse</a>
+                    <a href="">Discord</a>
+                    <a href="">Mighty</a>
+                    <a href="">Network</a>
+                    <a href="">Tribe</a>
+                    <a href="">Circle</a>
+                </div>
+
+                <div class="foot-flex-column">
+                    <h3>Follow Us on</h3>
+                    <a href="">Twitter</a>
+                    <a href="">Linkedin</a>
+                    <a href="">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -------    FOOTER    ------- -->
+
+</body>
+
+</html>
