@@ -1,4 +1,3 @@
-
 :root {
     --dark: #141414;
     --light: #cecdff;
@@ -16,6 +15,14 @@ a {
     margin: 5px 0px;
     color: #0445fe;
     text-decoration: none;
+}
+
+#admin {
+    color: var(--light);
+}
+
+#admin:hover {
+    color: var(--dark);
 }
 
 /* hamburger icon header */
@@ -420,7 +427,7 @@ footer {
         width: 100%;
     }
 
-    .card:hover{
+    .card:hover {
         transform: scale(0.9);
     }
 
@@ -433,3 +440,166 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
+/* Admin panel styling */
+
+#admin-pane{
+    display: none;
+    padding-top: 50px;
+}
+
+.wrap {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box {
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+    background-color: #222222;
+    border: 1px solid var(--light);
+}
+
+.image-box {
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+    background-color: #222222;
+    border: 1px solid var(--light);
+}
+
+.adjust-text-img {
+    width: 36px;
+}
+
+input {
+    padding: 8px 15px;
+    font-size: small;
+    border: none;
+    outline: none;
+    color: var(--light);
+    background-color: #222222;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    color: var(--light);
+    display: inline-block;
+    margin: auto;
+    font-size: 15px;
+    padding: 8px 15px;
+    background: none;
+    border: none;
+    border-left: 1px solid var(--light);
+    transition: 250ms;
+}
+
+.btn:hover {
+    color: var(--dark);
+    background-color: white;
+}
+
+.btn:active {
+    color: white;
+    background-color: var(--light);
+}
+
+label {
+    font-weight: 600;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+
+/* ACTION BUTTON CODING */
+.actions {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.actions button {
+    cursor: pointer;
+    margin: 10px 10px;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    transition: background-color 300ms;
+}
+
+.actions button:hover {
+    color: white;
+    background-color: blue;
+}
+
+.actions button:active {
+    transform: scale(0.9);
+}
+
+/* ACTION BUTTON CODING */
+
+
+
+@media only screen and (max-width:900px) {
+    .wrap {
+        margin-bottom: 100px;
+    }
+
+    .form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .actions button {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width:580px) {
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        width: 100%;
+        position: static;
+    }
+
+    .actions button {
+        margin: 15px auto;
+        padding: 15px 0px;
+        width: 45%;
+    }
+}
+
+/* Admin panel styling */
