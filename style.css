@@ -166,10 +166,12 @@ a {
 }
 
 .detail {
+    /* width: auto; */
     margin-top: 30px;
 }
 
 .headings {
+    margin-top: 0;
     margin-bottom: 60px;
     color: var(--light);
     text-align: center;
@@ -352,6 +354,8 @@ footer {
 .pensil-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 
@@ -570,6 +574,7 @@ label {
 
 
 @media only screen and (max-width:900px) {
+
     .wrap {
         margin-bottom: 100px;
     }
