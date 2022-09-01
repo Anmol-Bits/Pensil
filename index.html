@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/images/favicon.png">
-    <script src="/script.js"></script>
 
 </head>
 
@@ -25,16 +24,19 @@
             <li><a href="#">Use Case</a></li>
             <li><a href="#">Resource</a></li>
             <li><a href="#">Pricing</a></li>
-            <li><a href="/admin.html">Admin</a></li>
+            <li><a id="admin" href="#" onclick="show_admin()">Admin</a></li>
         </ul>
     </header>
 
+    <!-- -------    NAVIGATION    ------- -->
 
-    <!-- -------    WHAT IS PENSIL    ------- -->
 
-    <div class="container">
-        <h1 class="headings" id="tag-line">One platform for all your community needs <a id="try" href="#">Try for
-                free</a></h1>
+    <div id="main">
+        <!-- -------    WHAT IS PENSIL    ------- -->
+
+        <div class="container">
+            <h1 class="headings" id="tag-line">One platform for all your community needs <a id="try" href="#">Try for
+                    free</a></h1>
 
             <div class="pensil-grid">
                 <div class="detail">
@@ -45,68 +47,76 @@
                         discussions or take online learning courses.</p>
                 </div>
                 <div class="hero">
-                    <img src="/images/Pensil_image.png" alt="">
+                    <img id="hero-img" src="/images/Pensil_image.png" alt="">
                 </div>
 
+            </div>
         </div>
-    </div>
+
+        <!-- -------    WHAT IS PENSIL    ------- -->
 
 
-    <!-- -------    VIDEO    ------- -->
 
-    <div class="video">
-        <div class="padding-div">
-            <div class="container">
-                <h1 class="headings">Here we are</h1>
-                <div class="video-flex">
-                    <video loop muted playsinline data-wf-ignore="true">
-                        <source
-                            src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.mp4"
-                            data-wf-ignore="true">
-                        <source
-                            src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.webm"
-                            data-wf-ignore="true">
-                    </video>
+        <!-- -------    VIDEO    ------- -->
+
+        <div class="video">
+            <div class="padding-div">
+                <div class="container">
+                    <h1 id="video-title" class="headings">Here we are</h1>
+                    <div class="video-flex">
+                        <video autoplay loop muted playsinline data-wf-ignore="true">
+                            <source id="main-video"
+                                src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.mp4"
+                                data-wf-ignore="true">
+                            <source
+                                src="https://uploads-ssl.webflow.com/615a8096dd69ecb979d5ea68/6299e2bcea253e73171caaf9_ezgif-4-a326cbc4b0-transcode.webm"
+                                data-wf-ignore="true">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- -------    VIDEO    ------- -->
 
 
-    <!-- -------    LIVE INTERACTION   ------- -->
 
-    <div class="black-bg">
-        <div class="padding-div">
-            <div class="container">
-                <div class="flex-column">
-                    <h1 class="headings">Seemless live Interaction</h1>
-                    <div>
-                        <img id="live-img" src="/images/live_interaction.png" alt="">
-                    </div>
+        <!-- -------    LIVE INTERACTION   ------- -->
 
-                    <div>
-                        <div class="flex-row">
-                            <div class="live-features">
-                                <!-- <img src="/why_pensil images/seo-image.jpg" alt=""> -->
-                                <div class="container">
-                                    <h2>Immersive Experience</h2>
-                                    <p>Conduct Live sessions or webinar, get the best audio video quality</p>
+        <div class="black-bg">
+            <div class="padding-div">
+                <div class="container">
+                    <div class="flex-column">
+                        <h1 id="live-title" class="headings">Seemless live Interaction</h1>
+                        <div>
+                            <img id="live-img" src="/images/live_interaction.png" alt="">
+                        </div>
+
+                        <div>
+                            <div class="flex-row">
+                                <div class="live-features">
+                                    <!-- <img src="/why_pensil images/seo-image.jpg" alt=""> -->
+                                    <div class="container">
+                                        <h2>Immersive Experience</h2>
+                                        <p>Conduct Live sessions or webinar, get the best audio video quality</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="live-features">
-                                <!-- <img src="/why_pensil images/game-image.jpg" alt=""> -->
-                                <div class="container">
-                                    <h2>Host Event with Live QnA</h2>
-                                    <p>Invite hosts, moderator & get the best live experience for your community</p>
+                                <div class="live-features">
+                                    <!-- <img src="/why_pensil images/game-image.jpg" alt=""> -->
+                                    <div class="container">
+                                        <h2>Host Event with Live QnA</h2>
+                                        <p>Invite hosts, moderator & get the best live experience for your community</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="live-features">
-                                <!-- <img src="/why_pensil images/server-image.jpg" alt=""> -->
-                                <div class="container">
-                                    <h2>Share your live recordings</h2>
-                                    <p>Share or post recording on Youtube, Facebook, Vimeo, or any other platform</p>
+                                <div class="live-features">
+                                    <!-- <img src="/why_pensil images/server-image.jpg" alt=""> -->
+                                    <div class="container">
+                                        <h2>Share your live recordings</h2>
+                                        <p>Share or post recording on Youtube, Facebook, Vimeo, or any other platform
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -114,106 +124,234 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- -------    LIVE INTERACTION   ------- -->
 
 
-    <!-- -------    WHY US ?    ------- -->
 
-    <div class="padding-div">
-        <div class="container">
-            <h1 class="headings">Why Pensil ?</h1>
-            <div class="flex-row    ">
-                <div class="card">
-                    <img src="/why_pensil images/seo-image.jpg" alt="">
-                    <div class="container">
-                        <h2>SEO content</h2>
-                        <p>Rank higher in google search result with SEO optimized content</p>
+        <!-- -------    WHY US ?    ------- -->
+
+        <div class="padding-div">
+            <div class="container">
+                <h1 class="headings">Why Pensil ?</h1>
+                <div class="flex-row    ">
+                    <div class="card">
+                        <img src="/why_pensil images/seo-image.jpg" alt="">
+                        <div class="container">
+                            <h2>SEO content</h2>
+                            <p>Rank higher in google search result with SEO optimized content</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="/why_pensil images/game-image.jpg" alt="">
-                    <div class="container">
-                        <h2>Gamification</h2>
-                        <p>Engage community with karmapoints, badges, milestore etc</p>
+                    <div class="card">
+                        <img src="/why_pensil images/game-image.jpg" alt="">
+                        <div class="container">
+                            <h2>Gamification</h2>
+                            <p>Engage community with karmapoints, badges, milestore etc</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="/why_pensil images/server-image.jpg" alt="">
-                    <div class="container">
-                        <h2>Dedicated Server</h2>
-                        <p>Scale as you grow with dedicated server for community of any size</p>
+                    <div class="card">
+                        <img src="/why_pensil images/server-image.jpg" alt="">
+                        <div class="container">
+                            <h2>Dedicated Server</h2>
+                            <p>Scale as you grow with dedicated server for community of any size</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="/why_pensil images/Custom-page.jpg" alt="">
-                    <div class="container">
-                        <h2>Embed Custom Pages</h2>
-                        <p>Add your website, e-commerce page or anything with simple script</p>
+                    <div class="card">
+                        <img src="/why_pensil images/Custom-page.jpg" alt="">
+                        <div class="container">
+                            <h2>Embed Custom Pages</h2>
+                            <p>Add your website, e-commerce page or anything with simple script</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="/why_pensil images/Integration.jpg" alt="">
-                    <div class="container">
-                        <h2>Bunch of Integration</h2>
-                        <p>Plug with other tolls which you already using and brings the best of both the world</p>
+                    <div class="card">
+                        <img src="/why_pensil images/Integration.jpg" alt="">
+                        <div class="container">
+                            <h2>Bunch of Integration</h2>
+                            <p>Plug with other tolls which you already using and brings the best of both the world</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <img src="/why_pensil images/News-letter.jpg" alt="">
-                    <div class="container">
-                        <h2>Newsletter</h2>
-                        <p>Wont it be great if you could just send newsletter from your community, well its almost here</p>
+                    <div class="card">
+                        <img src="/why_pensil images/News-letter.jpg" alt="">
+                        <div class="container">
+                            <h2>Newsletter</h2>
+                            <p>Wont it be great if you could just send newsletter from your community, well its almost
+                                here</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- -------    WHY US ?    ------- -->
 
 
-    <!-- -------    MOBILE APP    ------- -->
 
-    <div class="padding-div">
-        <div class="black-bg">
-            <div id="app">
-                <div class="app-details">
-                    <h1>Mobile App for your community</h1>
-                    <p>Get complete custom branded app for you community & give your community the experince they
-                        deserve.
-                    </p>
-                    <button>Get Mobile App</button>
+        <!-- -------    MOBILE APP    ------- -->
+
+        <div class="padding-div">
+            <div class="black-bg">
+                <div id="app">
+                    <div class="app-details">
+                        <h1>Mobile App for your community</h1>
+                        <p>Get complete custom branded app for you community & give your community the experince they
+                            deserve.
+                        </p>
+                        <button>Get Mobile App</button>
+                    </div>
+                    <img src="/images/app-image.png" alt="">
                 </div>
-                <img src="/images/app-image.png" alt="">
             </div>
         </div>
+
+        <!-- -------    MOBILE APP    ------- -->
+
+
+
+        <!-- -------    PARTNERS    ------- -->
+
+        <div class="white-bg">
+            <div class="container">
+                <h1 class="headings">Trusted Partners</h1>
+
+                <div class="logos-div">
+                    <div class="logo-container"><img src="/Sponsors/1.png" alt="Ultimate Gurus" class="partner-logo">
+                    </div>
+                    <div class="logo-container"><img src="/Sponsors/2.png" alt="Unschool" class="partner-logo"></div>
+                    <div class="logo-container"><img src="/Sponsors/3.png" alt="Somiya Vidyavihar" class="partner-logo">
+                    </div>
+                    <div class="logo-container"><img src="/Sponsors/4.png" alt="Tyke" class="partner-logo"></div>
+                    <div class="logo-container"><img src="/Sponsors/5.png" alt="Catalyst Muscat" class="partner-logo">
+                    </div>
+                    <div class="logo-container"><img src="/Sponsors/6.png" alt="PedalStart" class="partner-logo"></div>
+                    <div class="logo-container"><img src="/Sponsors/7.png" alt="The Heartway" class="partner-logo">
+                    </div>
+                    <div class="logo-container"><img src="/Sponsors/8.png" alt="PlanetSpark" class="partner-logo"></div>
+                    <div class="logo-container"><img src="/Sponsors/9.png" alt="Recruiting Monk" class="partner-logo">
+                    </div>
+                    <div class="logo-container"><img src="/Sponsors/10.png" alt="Kinship" class="partner-logo"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- -------    PARTNERS    ------- -->
+
+
+
+        <!-- -------    ADMIN SECTION    ------- -->
     </div>
 
 
-    <!-- -------    PARTNERS    ------- -->
-
-    <div class="white-bg">
-        <div class="container">
-            <h1 class="headings">Trusted Partners</h1>
-
-            <div class="logos-div">
-                <div class="logo-container"><img src="/Sponsors/1.png" alt="Ultimate Gurus" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/2.png" alt="Unschool" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/3.png" alt="Somiya Vidyavihar" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/4.png" alt="Tyke" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/5.png" alt="Catalyst Muscat" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/6.png" alt="PedalStart" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/7.png" alt="The Heartway" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/8.png" alt="PlanetSpark" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/9.png" alt="Recruiting Monk" class="partner-logo"></div>
-                <div class="logo-container"><img src="/Sponsors/10.png" alt="Kinship" class="partner-logo"></div>
+    <div id="admin-pane">
+        <div class="wrap">
+            <h1>ADMIN PANEL</h1>
+            <div class="actions">
+                <button onclick="show_main()">Preview</button>
+                <button>Publish</button>
             </div>
 
+            <div class="form">
+                <div>
+                    <h2>Edit You Tag line</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="tag-line-edit" class="adjust-text" type="text" placeholder="Edit Tag line">
+                            <button class="btn" onclick="tag_line()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------- PENSIL --------- -->
+
+                <div>
+                    <h2>Edit Pensil Definition</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="edit-definition" class="adjust-text" type="text" placeholder="Edit Pensil Definition">
+                            <button class="btn" onclick="pensil_def()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h2>Change Pensil image</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="pensil-image" class="adjust-text" type="text" placeholder="Place link for image">
+                            <button class="btn" onclick="change_pensil_image()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div>
+                    <h2>Change Pensil image</h2>
+                    <div class="edit">
+                        <div class="image-box">
+                            <label for="inputTag">
+                                Select Image
+                                <input id="inputTag" type="file" accept="image/png, image/jpeg">
+                            </label>
+                            <span>or</span>
+                            <input id="pensil-image" class="adjust-text-img" type="text" placeholder="Link">
+                            <button class="btn" onclick="change_pensil_image()">+</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- --------- VIDEO --------- -->
+
+                <div>
+                    <h2>Edit video section title</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="edit-video-title" class="adjust-text" type="text" placeholder="Edit video section title">
+                            <button class="btn" onclick="change_video_title()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Replace video</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="change-video" class="adjust-text" type="text" placeholder="Paste new video link">
+                            <button class="btn" onclick="change_video()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------- LIVE SECTION --------- -->
+
+                <div>
+                    <h2>Edit Live section title</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="edit-live-title" class="adjust-text" type="text" placeholder="Edit Live section heading">
+                            <button class="btn" onclick = "change_live_title()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Change live section image</h2>
+                    <div class="edit">
+                        <div class="text-box">
+                            <input id="edit-live-image" class="adjust-text" type="text" placeholder="Place link for image">
+                            <button class="btn" onclick = "change_live_image()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+    <!-- -------    ADMIN SECTION    ------- -->
 
 
     <!-- -------    FOOTER    ------- -->
@@ -267,6 +405,9 @@
     </footer>
 
     <!-- -------    FOOTER    ------- -->
+
+
+    <script src="/script.js"></script>
 
 </body>
 
